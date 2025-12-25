@@ -132,3 +132,17 @@ body::before {
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
 }
+
+/* Slow spin animation for avatar border */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}

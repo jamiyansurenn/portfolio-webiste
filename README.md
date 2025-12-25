@@ -53,6 +53,19 @@ This project is configured for easy deployment on Vercel:
   - `components/Projects.tsx` - Your projects
   - `components/Contact.tsx` - Contact information
 
+### 🖼️ Adding Your Avatar
+
+1. Place your profile picture in the `public/` folder
+2. Name it `avatar.jpg` (or update the path in `components/Hero.tsx`)
+3. Supported formats: JPG, PNG, WebP
+4. Recommended size: 400x400px or larger (square image)
+5. If no image is provided, the avatar will show your initials automatically
+
+The avatar features:
+- Animated gradient border
+- Smooth glow effect
+- Automatic fallback to initials if image fails to load
+
 ## 📄 License
 
 MIT License - feel free to use this template for your own portfolio!

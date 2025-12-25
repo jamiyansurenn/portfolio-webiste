@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Avatar from './Avatar'
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -75,6 +76,19 @@ export default function Hero() {
         animate="visible"
         className="text-center max-w-5xl mx-auto relative z-10"
       >
+        {/* Avatar */}
+        <motion.div
+          variants={itemVariants}
+          className="flex justify-center mb-8"
+        >
+          <Avatar
+            src="/avatar.jpg"
+            alt="Мөнгөнсүх"
+            name="Мөнгөнсүх"
+            size="lg"
+          />
+        </motion.div>
+
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl text-gray-400 mb-6 font-light tracking-wide"
